@@ -7,26 +7,25 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="images/alien.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papF5PH7J9MUZ7LO3H8BlWqTVrjfGQYCOIzFcJxkSR8StDhnqG+MaVKuIfqxAFL3jaLq7Q4YVjTwGUfwoMW/wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header class="navbar">
-    <nav class="nav-left">
-      <span class="nav-name">Sheli Shapiro</span>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#about">About</a>
-      <a href="#resume" target="_blank">Resume</a>
-      <a href="#contact">Contact Me</a>
-    </nav>
-    <nav class="nav-right">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	<div class="nav-right">
-
-      <a href="https://www.linkedin.com/in/shelishapiro/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://vimeo.com/user95605787" target="_blank"><i class="fab fa-vimeo"></i></a>
-      <a href="https://github.com/shelshap" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="#contact"><i class="fas fa-envelope"></i></a>
-    </nav>
+    <div class="navbar-inner">
+      <nav class="nav-left">
+        <span class="nav-name">Sheli Shapiro</span>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact Me</a>
+      </nav>
+      <nav class="nav-right">
+        <a href="https://www.linkedin.com/in/shelishapiro/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://vimeo.com/user95605787" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+        <a href="https://github.com/shelshap" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#contact"><i class="fas fa-envelope"></i></a>
+      </nav>
+    </div>
   </header>
 
   <main class="centered">
@@ -38,26 +37,36 @@
   </main>
 
   <div class="portfolio-button-container">
-  <button class="portfolio-button" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">View Portfolio</button>
-</div>
-
+    <button class="portfolio-button" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">View Portfolio</button>
+  </div>
 
   <section id="portfolio" class="section">
-    <h2>Life is Strange: Double Exposure Reel:</h2>
+    <h2 class="video-title">Life is Strange: Double Exposure Reel:</h2>
     <iframe src="https://player.vimeo.com/video/1044521405" frameborder="0" allowfullscreen></iframe>
-    <h2>Character Animation Reel:</h2>
+    <h2 class="video-title">Character Animation Reel:</h2>
     <iframe src="https://player.vimeo.com/video/988631163" frameborder="0" allowfullscreen></iframe>
   </section>
 
   <hr class="divider" />
 
   <section id="about" class="section about-section">
-    <div class="about-text">
-      <p>Hi there! I’m an animator who loves bringing characters to life. I’ve worked across games, advertising, music videos, and more - with studios like Deck Nine Games, Nestlé Purina and The Beardy Boys. My credits include the AAA title Life is Strange: Double Exposure, as well as another AAA project currently in development.</p>
+    <h2 class="section-title align">ABOUT</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Hi there! I’m an animator who loves bringing characters to life. I’ve worked across games, advertising, music videos, and more - at studios like Deck Nine Games, Nestlé Purina and The Beardy Boys. My credits include the AAA title Life is Strange: Double Exposure, as well as another AAA project currently in development.</p>
+      </div>
+      <div class="about-photo">
+        <img src="images/me.jpg" alt="Photo of Sheli Shapiro" />
+      </div>
     </div>
-    <div class="about-photo">
-      <img src="images/me.jpg" alt="Photo of Sheli Shapiro" />
-    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section id="resume" class="section resume-section">
+    <h2 class="section-title align">RESUME</h2>
+    <embed src="Sheli Shapiro Resume.pdf" type="application/pdf" class="resume-embed" />
+    <p class="resume-download-text">Or you can <a href="Sheli Shapiro Resume.pdf" download>download my resume here</a>.</p>
   </section>
 
   <hr class="divider" />
